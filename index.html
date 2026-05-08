@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Preview - Free Online Markdown Editor & Preview</title>
+    <meta name="description" content="Free online Markdown preview tool. Write Markdown and see the rendered HTML output in real time. Supports GFM syntax.">
+    <meta name="keywords" content="markdown preview online, markdown editor, markdown to html, markdown renderer, markdown viewer">
+    <link rel="canonical" href="https://jko-yohan.github.io/markdown-preview/">
+    <meta property="og:title" content="Markdown Preview - Free Online Markdown Editor & Preview">
+    <meta property="og:description" content="Write Markdown and see the rendered HTML output in real time.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jko-yohan.github.io/markdown-preview/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4754582635962628" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Markdown Preview</h1>
+        <p class="subtitle">Write Markdown, see the preview in real time</p>
+    </header>
+    <main>
+        <div class="toolbar">
+            <button class="btn" data-action="bold" title="Bold"><b>B</b></button>
+            <button class="btn" data-action="italic" title="Italic"><i>I</i></button>
+            <button class="btn" data-action="heading" title="Heading">H</button>
+            <button class="btn" data-action="link" title="Link">Link</button>
+            <button class="btn" data-action="code" title="Code">Code</button>
+            <button class="btn" data-action="list" title="List">List</button>
+            <span class="spacer"></span>
+            <button id="btn-copy-md" class="btn">Copy MD</button>
+            <button id="btn-copy-html" class="btn">Copy HTML</button>
+            <button id="btn-clear" class="btn">Clear</button>
+        </div>
+        <div class="editor-container">
+            <div class="editor-panel">
+                <label>Markdown</label>
+                <textarea id="md-input" spellcheck="false"># Hello World
+
+This is a **Markdown** preview tool.
+
+## Features
+
+- Real-time preview
+- GFM support
+- Syntax highlighting for `code`
+
+### Code Block
+
+```javascript
+console.log("Hello!");
+```
+
+> Blockquote example
+
+| Name | Value |
+|------|-------|
+| A    | 1     |
+| B    | 2     |
+
+[Visit Example](https://example.com)
+</textarea>
+            </div>
+            <div class="editor-panel">
+                <label>Preview</label>
+                <div id="md-output" class="preview"></div>
+            </div>
+        </div>
+
+        <section class="info-section">
+            <h2>Online Markdown Preview</h2>
+            <p>Write or paste Markdown text on the left and instantly see the rendered HTML preview on the right. Supports GitHub Flavored Markdown (GFM) including tables, task lists, strikethrough, and fenced code blocks.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time Markdown to HTML rendering</li>
+                <li>GitHub Flavored Markdown support</li>
+                <li>Toolbar for quick formatting</li>
+                <li>Copy Markdown or rendered HTML</li>
+                <li>Works entirely in your browser</li>
+            </ul>
+        </section>
+
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4754582635962628"
+                 data-ad-slot=""
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </main>
+    <footer>
+        <p>All processing runs locally in your browser. No data is sent to any server.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

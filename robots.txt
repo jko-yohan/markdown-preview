@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jko-yohan.github.io/markdown-preview/sitemap.xml
